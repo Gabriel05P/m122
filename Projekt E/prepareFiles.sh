@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#wurde überarbeitet!
+
 # Optionen
 output_file=""
 timestamp=$(date '+%Y-%m-%d_%H%M')
