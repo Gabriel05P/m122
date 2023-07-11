@@ -22,8 +22,7 @@ Liebe:r [Vorname],
 
 Es freut uns, Sie im neuen Schuljahr begrüßen zu dürfen.
 
-Damit Sie am ersten Tag sich in unsere Systeme einloggen können, erhalten Sie hier Ihre neue E-Mail-Adresse und Ihr Initialpasswort, das Sie beim ersten Login ändern müssen.
-
+Damit Sie am ersten Tag sich in unsere Systeme einloggen können, erhalten Sie hier Ihre neue E-Mail-Adresse und Ihr Initialpasswort, das Sie beim ersten Login ändern m>
 E-Mail-Adresse:   [GenerierteEmailadresse]
 Passwort:       [GeneriertesPasswort]
 
@@ -39,7 +38,7 @@ EOF
 )
 
 sanitize_string() {
-  local string="$1"
+    local string="$1"
   string=$(echo "$string" | iconv -f utf-8 -t ascii//TRANSLIT)
   string=$(echo "$string" | tr -cd '[:alnum:].')
 
@@ -78,8 +77,8 @@ done < <(tail -n +2 "$input_file")
 archive_filename="$(date +"%Y-%m-%d_%H-%M")_newMails.zip"
 zip -r "$archive_filename" "$output_file" "$letters_folder"
 
-my_email="your_email@example.com"
-friend_email="friend_email@example.com"
+my_email="gabrielpm122@hotmail.com"
+friend_email="gabriel.pervorfi05@hotmail.com"
 email_subject="New TBZ Mail Addresses $email_count"
 
 {
